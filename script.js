@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const enterButton = document.getElementById("enterBtn");
 
       enterButton.addEventListener("click", () => {
-        // This will change the entire paragraph to a new <h1 id="status"> element
-        const h1 = document.createElement("h1");
-        h1.id = "status";
-        h1.innerText = "Entered Metaverse";
-        statusPara.replaceWith(h1);
+        statusPara.innerHTML = "<h1>Entered Metaverse</h1>";
       });
     });
